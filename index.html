@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개발자 포트폴리오 | Developer Portfolio</title>
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Fixed Header -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container container">
+      <span id="page-title" class="nav-title">Portfolio</span>
+      <button id="theme-toggle" class="theme-toggle-nav" aria-label="Toggle Theme" title="Switch Theme">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="container">
+    <div class="hero-content reveal">
+      <p class="greeting">안녕하세요,</p>
+      <h1>프론트/백엔드 개발자 <br><span>강미선</span>입니다.</h1>
+      <p>
+        사용자 경험을 최우선으로 생각하는 웹 개발자입니다.<br>
+        AI 기술과 웹의 융합에 관심이 많으며, 깊이 있는 고민과 끊임없는<br>도전을 통해 성장합니다.
+      </p>
+      <div class="cta-buttons">
+        <!-- User's GitHub URL Placeholder -->
+        <a href="https://github.com/betterproject-dev" target="_blank" class="btn btn-primary">
+          <i class="fab fa-github"></i> GitHub 방문하기
+        </a>
+        <a href="#skills" class="btn btn-glass">
+          프로젝트 보기 <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section container">
+    <h2 class="section-title reveal">About Me</h2>
+    <div class="about-grid reveal">
+
+      <!-- Left: Profile & Contact -->
+      <div class="about-card profile-card">
+        <h3>Contact & Info</h3>
+        <ul class="contact-list">
+          <li><i class="fas fa-user"></i> <strong>Name :</strong> 강미선 (Misun Kang)</li>
+          <li><i class="fas fa-calendar"></i> <strong>Birth :</strong> 2003.03.10</li>
+          <li><i class="fas fa-envelope"></i> <strong>Email :</strong> altjs3310@naver.com</li>
+          <li><i class="fas fa-phone"></i> <strong>Tel :</strong> 010-8570-3320</li>
+          <li><i class="fas fa-map-marker-alt"></i> <strong>Addr :</strong> 경기도 하남시</li>
+        </ul>
+      </div>
+
+      <!-- Right: Education -->
+      <div class="about-card education-card">
+        <h3>Education</h3>
+        <div class="edu-item">
+          <span class="edu-date">2025.06 ~ 2026.01</span>
+          <div class="edu-info">
+            <h4>AI를 이용한 스마트플랫폼 개발자 양성과정</h4>
+            <p>엠비씨아카데미컴퓨터학원 (기업연계형)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section id="skills" class="section container">
+    <h2 class="section-title reveal">Tech Stack</h2>
+    <div class="tech-container reveal">
+
+      <!-- Category: Languages -->
+      <div class="tech-category">
+        <h3>Languages</h3>
+        <div class="tech-group">
+          <div class="tech-item">JavaScript (ES6+)</div>
+          <div class="tech-item">Python</div>
+          <div class="tech-item">Java</div>
+        </div>
+      </div>
+
+      <!-- Category: Frontend -->
+      <div class="tech-category">
+        <h3>Frontend</h3>
+        <div class="tech-group">
+          <div class="tech-item">React</div>
+          <div class="tech-item">Vite</div>
+          <div class="tech-item">HTML5 & CSS3</div>
+        </div>
+      </div>
+
+      <!-- Category: Backend -->
+      <div class="tech-category">
+        <h3>Backend</h3>
+        <div class="tech-group">
+          <div class="tech-item">Spring Boot</div>
+          <div class="tech-item">Flask</div>
+          <div class="tech-item">Node.js</div>
+          <div class="tech-item">MySQL</div>
+        </div>
+      </div>
+
+      <!-- Category: AI / ML -->
+      <div class="tech-category">
+        <h3>AI / ML</h3>
+        <div class="tech-group">
+          <div class="tech-item">YOLOv8</div>
+          <div class="tech-item">PyTorch</div>
+          <div class="tech-item">TensorFlow</div>
+          <div class="tech-item">OpenCV</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section container">
+    <h2 class="section-title reveal">Projects</h2>
+    <div class="projects-grid">
+
+      <!-- Project: S.P.I.D.E.R -->
+      <article class="project-card reveal">
+        <div class="project-header">
+          <h3 class="project-title">S.P.I.D.E.R</h3>
+          <div class="project-links">
+            <a href="https://youtu.be/jsGmotxAkgI" target="_blank" title="프로젝트 시연 영상 (YouTube)"><i
+                class="fab fa-youtube" style="color: #ef4444;"></i></a>
+            <a href="https://github.com/betterproject-dev/spider_front" target="_blank" title="GitHub Repo"><i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <p class="project-desc">
+          <strong>스마트 예지 및 통합 불량 평가 시스템</strong><br>
+          <span style="font-size: 0.85rem; color: var(--text-secondary);">2025.12.09 ~ 2026.01.16 (39일)</span><br><br>
+          제조 공정 데이터를 분석하여 실시간으로 불량을 탐지하고, 장비 고장을 사전에 예측(예지 보전)하는 스마트 팩토리 솔루션입니다.
+        </p>
+        <div class="project-highlight">
+          <h4>🛠 담당 역할</h4>
+          <p>• <strong>머신러닝 예지 보전:</strong> 센서 데이터 기반 LSTM 학습 파이프라인 설계 및 이상 징후 조기 감지 로직 구현</p>
+          <p>• <strong>실시간 불량 탐지:</strong> YOLOv8 + Flask 연동을 통한 실시간 추론 API 구축</p>
+          <p>• <strong>데이터 시각화:</strong> 제품별 불량률 및 공정 변화 실시간 그래프(Chart) 개발</p>
+          <p>• <strong>관리자 보안:</strong> Access Code 기반의 관리자 인증 및 권한 제어 시스템 구현</p>
+
+          <h4 style="margin-top: 1rem;">💡 성과 및 느낀점</h4>
+          <p>• 단순 불량 판정을 넘어 머신러닝을 활용해 이상 징후를 미리 예측하는 <strong>예지 보전 로직</strong>의 기초부터 구현까지 직접 경험</p>
+          <p>• 실시간 센서 데이터를 분석 결과와 연동하고 시각화하며, <strong>사용자 의사결정을 돕는 전체적인 서비스 흐름</strong>을 이해</p>
+          <p>• 데이터 저장 로직과 관리자 인증 기능을 설계하며, <strong>보안과 데이터 정합성</strong>이 서비스 신뢰도에 미치는 중요성을 체감</p>
+        </div>
+        <div class="project-tags">
+          <span class="tag">React</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">YOLOv8</span>
+          <span class="tag">LSTM</span>
+        </div>
+      </article>
+
+      <!-- Project: Drug Project -->
+      <article class="project-card reveal">
+        <div class="project-header">
+          <h3 class="project-title">Drug Project (의약품 분석)</h3>
+          <div class="project-links">
+            <a href="https://youtu.be/MQPhBeLTY3c" target="_blank" title="프로젝트 시연 영상 (YouTube)"><i
+                class="fab fa-youtube" style="color: #ef4444;"></i></a>
+            <a href="https://github.com/guswlsl1216/drug_project_front" target="_blank" title="GitHub Repo"><i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <p class="project-desc">
+          <strong>의약품 분석 및 정보 제공 웹서비스</strong><br>
+          <span style="font-size: 0.85rem; color: var(--text-secondary);">2025.10.22 ~ 2025.11.28 (38일)</span><br><br>
+          사용자가 촬영한 알약 이미지를 분석하여 상품 정보를 제공하고, 구매 및 문의가 가능한 통합 헬스케어 플랫폼입니다.
+        </p>
+        <div class="project-highlight">
+          <h4>🛠 담당 역할</h4>
+          <p>• <strong>AI 모델 구현:</strong> YOLOv8 기반 경구약 이미지 분류 모델 학습 및 Flask Inference 연동</p>
+          <p>• <strong>스토어 기능:</strong> 상품 목록/상세 페이지, 카테고리 필터, 찜(Wishlist) 기능 개발</p>
+          <p>• <strong>QnA:</strong> JWT 기반 권한에 따라 게시글 작성, 수정, 삭제 처리</p>
+          <p>• <strong>데이터 수집:</strong> 식약처/공공데이터 DB 통합 및 악성 댓글 감지 모델(kcELECTRA) 활용</p>
+
+          <h4 style="margin-top: 1rem;">💡 성과 및 느낀점</h4>
+          <p>• 데이터 수집부터 모델 학습, 백엔드/프론트 연동까지 <strong>AI 서비스 개발의 전체 흐름</strong>을 경험</p>
+          <p>• MySQL + Flask + JWT 기반의 <strong>인증/인가 구조</strong>를 명확히 이해</p>
+          <p>• <strong>실제 서비스형 웹앱 수준</strong>의 기능 단위 개발과 구조 설계를 경험하며 완성도를 높임</p>
+        </div>
+        <div class="project-tags">
+          <span class="tag">React</span>
+          <span class="tag">Flask</span>
+          <span class="tag">YOLOv8</span>
+          <span class="tag">Python</span>
+        </div>
+      </article>
+
+      <!-- Project: Game Quiz Web Service -->
+      <article class="project-card reveal">
+        <div class="project-header">
+          <h3 class="project-title">게임 퀴즈 웹서비스</h3>
+          <div class="project-links">
+            <a href="https://github.com/WinLakeLee/teamtest" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <p class="project-desc">
+          <strong>포인트 기반 사용자 커스터마이징 퀴즈 플랫폼</strong><br>
+          <span style="font-size: 0.85rem; color: var(--text-secondary);">2025.08.25 ~ 2025.09.05 (12일)</span><br><br>
+          사용자가 퀴즈를 풀며 포인트를 획득하고, 이를 통해 자신의 닉네임과 아바타를 꾸밀 수 있는 게이미피케이션 서비스입니다.
+        </p>
+        <div class="project-highlight">
+          <h4>🛠 담당 역할</h4>
+          <p>• <strong>상점 기능:</strong> 포인트 기반 아이템 구매 로직 및 닉네임 꾸미기 기능 구현</p>
+          <p>• <strong>UI/UX 설계:</strong> 반응형 레이아웃 설계 및 컴포넌트 기반 CSS 구조화</p>
+          <p>• <strong>시스템 통합:</strong> JWT 인증 흐름 내 상점/포인트 시스템 연동 및 DB 처리</p>
+
+          <h4 style="margin-top: 1rem;">💡 성과 및 느낀점</h4>
+          <p>• 상점·포인트·커스터마이징 기능을 직접 연동하며 <strong>프론트-백엔드 간 데이터 처리 흐름</strong>을 실무적으로 이해</p>
+          <p>• 공통 UI 가이드와 CSS 구조를 설계하여 <strong>협업 시 팀의 개발 효율</strong>이 높아지는 과정을 경험</p>
+        </div>
+        <div class="project-tags">
+          <span class="tag">React</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">JPA</span>
+          <span class="tag">MySQL</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section container">
+    <h2 class="section-title reveal">Work Experience</h2>
+    <div class="projects-grid reveal">
+      <article class="project-card" style="grid-column: 1 / -1; max-width: 100%;">
+        <div class="project-header">
+          <h3 class="project-title">통신 인프라 기술 데이터 관리</h3>
+          <div class="project-links">
+            <span style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 500;">SKT 협력사 (3년 근무)</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          특성화고 재학 중 취업하여 졸업 전부터 약 3년간 무선국 허가 및 변경 업무를 전담했습니다.<br>
+          수천 건의 기술 데이터를 오차 없이 처리하려 노력하였고 어떤 업무든 끝까지 책임지는 태도를 익혔습니다.
+        </p>
+        <div class="project-highlight">
+          <h4>💡 성과 및 3년간의 배움 (Achievements & Learnings)</h4>
+          <p>• <strong>데이터 무결성 관리:</strong> 수많은 기술 규정과 행정 프로세스를 체계화하여 관리하며, 작은 오차가 시스템 전체에 미치는 영향을 파악하고 관리하는 정밀한 데이터 핸들링
+            역량을 쌓았습니다.</p>
+          <p>• <strong>다각적 협업과 소통:</strong> 현장 엔지니어와 관공서 사이에서 요구사항을 조율하며, 복잡한 프로세스를 명확하게 소통하고 시스템의 전체 흐름을 파악하는 법을 익혔습니다.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Data Management</span>
+          <span class="tag">Technical Communication</span>
+          <span class="tag">Process Optimization</span>
+          <span class="tag">Ownership</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="section container" style="text-align: center; color: var(--text-secondary); font-size: 0.9rem;">
+    <p>&copy; 2026 Developer Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
